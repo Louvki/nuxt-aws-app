@@ -5,13 +5,15 @@ phases:
    runtime-versions:
         nodejs: 10
    commands:
-     - echo "install step"
+     - npm i npm@latest -g
+     - pip install --upgrade pip
+     - pip install --upgrade awscli
  pre_build:
    commands:
-     - echo "pre_build step"
+     - npm install
  build:
    commands:
-     - aws s3 sync --delete . "s3://nuxt-aws-app"
+     - npm run generate
  post_build:
    commands:
-     - echo "post_build step"
+     - aws s3 sync ./dist nuxt-aws-app
