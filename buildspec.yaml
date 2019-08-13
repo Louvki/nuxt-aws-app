@@ -16,4 +16,4 @@ phases:
      - npm run generate
  post_build:
    commands:
-     - aws s3 sync ./dist nuxt-aws-app
+     - aws s3 sync ./dist s3://nuxt-aws-app
