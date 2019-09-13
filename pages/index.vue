@@ -6,7 +6,7 @@
         <vuetify-logo />
       </div>
       <v-card>
-        <v-card-title class="headline">ITWORKSBBY</v-card-title>
+        <v-card-title class="headline">MAMAMIA</v-card-title>
         <v-card-text>
           Yeah whateves johny
         </v-card-text>
